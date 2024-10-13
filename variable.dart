@@ -13,6 +13,14 @@ void main() {
   // var x; // if doesn't assign any value and datatype is also not assigned it will automaticly store null value .
   // print(x);
 
+  // String? y; // = ? using this null safety
+  // print(y);
+
+  var a = 0;
+  var b = ++a; // Increment a before b gets its value.
+  assert(a == 0); // 1 == 1
+  //  dart --enable-asserts run your_file.dart  => to active assert have to run file this way.
+
   // String --> Number
   int num1 = 10;
   int num2 = int.parse("20");
