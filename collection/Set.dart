@@ -7,12 +7,15 @@
 // Creating a Set
 // You can create a Set in Dart using the literal syntax {} or by using the Set constructor.
 
-
 void main() {
   // Creating a set using literals
-  Set<int> numbers = {1, 2, 3, 4, 4};  // Duplicate '4' will be ignored
+  Set<int> numbers = {1, 2, 3, 4, 4}; // Duplicate '4' will be ignored
 
-  print(numbers);  // Output: {1, 2, 3, 4}
+  print(numbers); // Output: {1, 2, 3, 4}
+
+  for (int i in numbers) {
+    print('= $i');
+  }
 
   // Creating an empty set
   Set<String> names = Set();
@@ -20,49 +23,41 @@ void main() {
   // Adding elements to the set
   names.add("Alice");
   names.add("Bob");
-  names.add("Alice");  // Duplicate 'Alice' will be ignored
+  names.add("Alice"); // Duplicate 'Alice' will be ignored
 
-  print(names);  // Output: {Alice, Bob}
-
+  print(names); // Output: {Alice, Bob}
 
   // Common Operations on Set
   // Adding elements:
-
 
   // add(): Adds a single element to the set.
   // addAll(): Adds multiple elements to the set.
   numbers.add(5);
   numbers.addAll([6, 7]);
 
-
   // Removing elements:
 
   // remove(): Removes an element from the set.
   // removeAll(): Removes multiple elements.
   // clear(): Removes all elements from the set.
-  numbers.remove(2);  // Removes '2' from the set
-
+  numbers.remove(2); // Removes '2' from the set
 
   // Checking for elements:
   // contains(): Returns true if the element is in the set.
   // containsAll(): Returns true if all specified elements are in the set.
-  print(numbers.contains(3));  // true
-
+  print(numbers.contains(3)); // true
 
   // Set Operations: Dart's Set class supports typical set operations such as union, intersection, and difference.
   // Union: Combines two sets, keeping unique elements.
   Set<int> set1 = {1, 2, 3};
   Set<int> set2 = {3, 4, 5};
-  print(set1.union(set2));  // Output: {1, 2, 3, 4, 5}
-
+  print(set1.union(set2)); // Output: {1, 2, 3, 4, 5}
 
   // Intersection: Returns the common elements between two sets.
-  print(set1.intersection(set2));  // Output: {3}
-
+  print(set1.intersection(set2)); // Output: {3}
 
   // Difference: Returns the elements present in one set but not the other.
-  print(set1.difference(set2));  // Output: {1, 2}
-
+  print(set1.difference(set2)); // Output: {1, 2}
 }
 
 // When to Use a Set?
