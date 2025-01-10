@@ -31,6 +31,11 @@ class user{
   static const age = 25;
 }
 
+// const means the value is fixed forever and decided when the program is compiled.
+// Instance variables (normal class fields) belong to each object created from the class.
+// const values are the same for all objects, so they don’t belong to just one object—they belong to the whole class.
+// Because of this, Dart requires const fields in a class to be marked as static, meaning they belong to the class itself, not to individual objects.
+
 
 
   // Difference bettwen final and const keyword:
