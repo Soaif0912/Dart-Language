@@ -6,7 +6,7 @@ class A{
 }
 
 class B extends A{
-  var x = 5;
+  var x = 10;
   void display(){
     print(super.x);
     super.display();
