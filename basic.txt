@@ -1,0 +1,30 @@
+=> import 'package:flutter/material.dart';
+import: Includes external libraries or packages in the file.
+'package:flutter/material.dart': Imports the Flutter Material Design components (buttons, colors, icons, etc.).
+
+
+=> 🔑 Key Concept of final and const keyword:
+  final makes the variable immutable, not the object it points to.
+  The reference to the list cannot change, but the content of the list can.
+
+  📦 Explanation:
+  final list1 = [1, 2, 3];  // The reference to the list is fixed.
+  list1.add(4);             // ✅ Allowed: Modifying the content of the list.
+  list1 = [5, 6, 7];        // ❌ Error: Cannot assign a new list to list1.
+  list1 always points to the same list object.
+
+  You can modify the list (add, remove, change items), but you cannot make list1 point to a new list.
+  🪨 With const: Completely Immutable
+  If you use const, even the content can't change:
+
+  const list2 = [1, 2, 3];
+  list2.add(4);  // ❌ Error: Cannot modify a const list.
+  list2 is frozen—neither its reference nor its content can be changed.
+  
+  📝 Simple Analogy
+  final → Whiteboard: You can't replace the whiteboard itself, but you can write or erase on it.
+  const → Stone Tablet: You can't replace it, and you can't change what's written on it.
+  
+  ✅ Summary
+  final: The reference can't change, but the object's content can.
+  const: Both the reference and the content are completely immutable.
