@@ -31,6 +31,7 @@ void main() {
 
   // Check if both instances are the same.
   print(logger1 == logger2); // true
+  print(identical(logger1, logger2));
 
   // Use the logger instance.
   logger1.log("This is a message.");
