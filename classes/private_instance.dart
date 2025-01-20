@@ -1,3 +1,5 @@
+// In Dart, private instances or private members are those that can only be accessed from within the same file they are defined in. You make a member private by starting its name with an underscore (_).
+
 class BankAccount {
   // Private instance variable
   double _balance;
@@ -37,6 +39,7 @@ void main() {
 
   // Accessing public methods
   account.deposit(250.00); // Output: Deposited: $250.00
+  print('Total amount: ${account._balance}');
   account.withdraw(100.00); // Output: Withdrew: $100.00
 
   // Accessing balance through a public method
