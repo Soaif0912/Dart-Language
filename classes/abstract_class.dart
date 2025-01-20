@@ -1,4 +1,5 @@
 abstract class Animal {
+  // hello
   // Abstract method (no implementation)
   void sound();
 
