@@ -21,6 +21,8 @@ void main(){
  
   foo = [1, 2, 3];
   print(foo);
+
+  print(user.age);
 }
 
 // Variable inside class are called instance variable.

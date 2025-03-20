@@ -7,7 +7,7 @@ void main(){
   //student('Soaif');
 
   // Default parameter with name parameter:
-  teacher("Jack");
+  teacher("Jack", subject: 'Economices');
 
   // Default parameter with optional position parameter:
   staf("Harson");

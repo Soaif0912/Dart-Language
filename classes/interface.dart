@@ -1,5 +1,7 @@
 
 abstract class A{
+
+  String name = 'soaif';
   void fun1(){
     print("object");
   }
@@ -10,6 +12,7 @@ class B{
 }
 
 class C implements A,B{
+
   @override
   void fun1() {
     print("inside func 1");
@@ -19,6 +22,9 @@ class C implements A,B{
   void fun2() {
     print("inside func 2");
   }
+
+  @override
+  String name ='kk';
 }
 
 void main(){

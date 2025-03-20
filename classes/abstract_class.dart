@@ -13,6 +13,11 @@ class Dog extends Animal {
   void sound() {
     print("Dog barks");
   }
+
+  @override
+  void sleep(){
+    print("All animal is sleeping");
+  }
 }
 
 class Cat extends Animal {

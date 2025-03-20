@@ -29,7 +29,7 @@ class Car {
 class ElectricCar extends Car {
   int batteryCapacity;
 
-  ElectricCar(String brand, String model, int year, this.batteryCapacity) : super(brand, model, year);
+  ElectricCar(String brand, String model, int year, { required this.batteryCapacity}) : super(brand, model, year);
 
   void displayBattery() {
     print('Battery Capacity: $batteryCapacity kWh');
@@ -37,7 +37,7 @@ class ElectricCar extends Car {
 }
 
 void main() {
-  ElectricCar tesla = ElectricCar('Tesla', 'Model S', 2021, 100);
+  ElectricCar tesla = ElectricCar('Tesla', 'Model S', 2021, batteryCapacity: 100);
   tesla.displayInfo();      // Output: Car: Tesla Model S, Year: 2021
   tesla.displayBattery();    // Output: Battery Capacity: 100 kWh
 }
