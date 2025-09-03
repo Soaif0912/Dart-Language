@@ -47,3 +47,61 @@ void main() {
 
 // Factory Constructor (factory Logger()):
 // This checks if the instance already exists. If yes, it returns the existing instance. If not, it creates and returns it (though it’s already created here in the static instance).
+
+
+
+class Singleton {
+  // Private constructor
+  Singleton._internal();
+
+  // Static instance (created only once)
+  static final Singleton _instance = Singleton._internal();
+
+  // Factory constructor always returns the same instance
+  factory Singleton() {
+    return _instance;
+  }
+
+  // Example method
+  void showMessage() {
+    print("I am a Singleton instance!");
+  }
+}
+
+class Singleton {
+  static final Singleton instance = Singleton._internal();
+
+  Singleton._internal();
+
+  void showMessage() {
+    print("Singleton via static field!");
+  }
+}
+
+
+class Singleton {
+  static Singleton? _instance;
+
+  Singleton._internal();
+
+  static Singleton get instance {
+    _instance ??= Singleton._internal();
+    return _instance!;
+  }
+}
+
+
+void main(){
+  var a1 = Singleton();
+  var a2 = Singleton._();
+  var a3 = Singleton
+}
+
+
+
+// Feature   	              Eager Singleton   	                        Lazy Singleton
+
+// When created	            At class load (immediately)	                Only on first access (get instance)
+// Performance	Faster        first access	                              First access slightly slower
+// Memory usage	            Always occupies memory	                    Uses memory only when needed
+// Best for	                Lightweight objects, always needed	        Heavy objects, optional use
