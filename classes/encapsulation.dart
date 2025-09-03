@@ -16,6 +16,7 @@ class BankAccount {
 
 main() {
   var myBank = BankAccount(2000000.00);
+  print(myBank._balance); // Where will work but on other file it will not work.
   print(myBank.getBalance());
 }
 
@@ -29,6 +30,6 @@ main() {
 
 // Here:
 
-// _balance is private because it starts with an underscore _.
-// We can't directly access _balance outside the BankAccount class.
+// _balance is private because it starts with an underscore _
+// We can't directly access _balance outside the BankAccount class in other file.
 // Instead, we use a method getBalance() to access it indirectly.
