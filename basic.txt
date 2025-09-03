@@ -2,6 +2,12 @@
 import: Includes external libraries or packages in the file.
 'package:flutter/material.dart': Imports the Flutter Material Design components (buttons, colors, icons, etc.).
 
+=> Const Constructor:
+
+    Used with immutable classes (all fields must be final).
+    Allows objects to be compile-time constants.
+    If two const objects have the same values, Dart will reuse the same instance (saves memory).
+
 
 => 🔑 Key Concept of final and const keyword:
   final makes the variable immutable, not the object it points to.
