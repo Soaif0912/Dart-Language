@@ -5,7 +5,6 @@
 // To share the same instance across the app.
 // To ensure consistent state and behavior.
 
-
 class Logger {
   // 1. Create a private static instance of the class.
   static final Logger _instance = Logger._internal();
@@ -50,52 +49,52 @@ void main() {
 
 
 
-class Singleton {
-  // Private constructor
-  Singleton._internal();
+// class Singleton {
+//   // Private constructor
+//   Singleton._internal();
 
-  // Static instance (created only once)
-  static final Singleton _instance = Singleton._internal();
+//   // Static instance (created only once)
+//   static final Singleton _instance = Singleton._internal();
 
-  // Factory constructor always returns the same instance
-  factory Singleton() {
-    return _instance;
-  }
+//   // Factory constructor always returns the same instance
+//   factory Singleton() {
+//     return _instance;
+//   }
 
-  // Example method
-  void showMessage() {
-    print("I am a Singleton instance!");
-  }
-}
+//   // Example method
+//   void showMessage() {
+//     print("I am a Singleton instance!");
+//   }
+// }
 
-class Singleton {
-  static final Singleton instance = Singleton._internal();
+// class Singleton {
+//   static final Singleton instance = Singleton._internal();
 
-  Singleton._internal();
+//   Singleton._internal();
 
-  void showMessage() {
-    print("Singleton via static field!");
-  }
-}
-
-
-class Singleton {
-  static Singleton? _instance;
-
-  Singleton._internal();
-
-  static Singleton get instance {
-    _instance ??= Singleton._internal();
-    return _instance!;
-  }
-}
+//   void showMessage() {
+//     print("Singleton via static field!");
+//   }
+// }
 
 
-void main(){
-  var a1 = Singleton();
-  var a2 = Singleton._();
-  var a3 = Singleton
-}
+// class Singleton {
+//   static Singleton? _instance;
+
+//   Singleton._internal();
+
+//   static Singleton get instance {
+//     _instance ??= Singleton._internal();
+//     return _instance!;
+//   }
+// }
+
+
+// void main(){
+//   var a1 = Singleton();
+//   var a2 = Singleton._();
+//   var a3 = Singleton
+// }
 
 
 
