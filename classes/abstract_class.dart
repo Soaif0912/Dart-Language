@@ -15,7 +15,7 @@ class Dog extends Animal {
   }
 
   @override
-  void sleep(){
+  void sleep() {
     print("All animal is sleeping");
   }
 }
@@ -36,7 +36,6 @@ void main() {
   cat.sound(); // Output: Cat meows
   cat.sleep(); // Output: The animal is sleeping.
 }
-
 
 // In Dart, an abstract class is a class that cannot be instantiated directly and is typically used to define a blueprint for other classes. Abstract classes are especially useful when you want to specify a contract (set of methods and properties) that other classes must follow without providing a full implementation.
 

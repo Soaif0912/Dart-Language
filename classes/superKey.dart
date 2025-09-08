@@ -1,3 +1,4 @@
+//When a child class needs to call the parent’s constructor to initialize its inherited properties.
 
 // In Dart, the super keyword is used to refer to the superclass of a class. It is primarily used to call:
 
@@ -19,7 +20,8 @@ class Animal {
 class Dog extends Animal {
   String breed;
 
-  Dog(String name, this.breed) : super(name); // Calling the superclass constructor
+  Dog(String name, this.breed)
+      : super(name); // Calling the superclass constructor
 }
 
 void main() {
