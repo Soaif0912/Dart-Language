@@ -1,6 +1,4 @@
-
-void main(){
-
+void main() {
   // When we use final and const keyword to create a variable that variable value will be constant or unchangeable.
   final v1 = "Soaif";
   const v2 = "Ikbal";
@@ -8,17 +6,13 @@ void main(){
   // v1 = "l";  // Will throw error
   // v2 = "k";  // Will throw error
 
-
-
   var a = 2;
 
   final x = a;
   //const y = a; // will thorw error
 
+  var foo = const [];
 
-
-  var foo = const []; 
- 
   foo = [1, 2, 3];
   print(foo);
 
@@ -27,7 +21,7 @@ void main(){
 
 // Variable inside class are called instance variable.
 
-class user{
+class user {
   final name = "Jake";
   // const age = 25;  // will throw error.
   static const age = 25;
@@ -53,3 +47,4 @@ class user{
   // 3.
   // Only static variable can be decalered as const inside class.
   // Final variable can be decalered normally.
+  // final here means the variable list cannot point to a different object later.
