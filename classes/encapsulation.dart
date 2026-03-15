@@ -5,11 +5,11 @@ class BankAccount {
     _balance = initialBalance;
   }
 
-  void deposit(double amount) {
+  void set deposit(double amount) {
     _balance += amount;
   }
 
-  double getBalance() {
+  double get getBalance {
     return _balance; // Indirect access to the private variable
   }
 }
@@ -17,7 +17,9 @@ class BankAccount {
 main() {
   var myBank = BankAccount(2000000.00);
   print(myBank._balance); // Where will work but on other file it will not work.
-  print(myBank.getBalance());
+  print(myBank.getBalance);
+  myBank.deposit = 500000.00;
+  print(myBank.getBalance);
 }
 
 

@@ -18,6 +18,10 @@ void main() {
     int number = int.parse('InvalidNumber');  // Throws FormatException
   } on FormatException {
     print('Invalid format');
+  } on Exception catch (e) {
+    print('An error occurred: $e');
+  } finally {
+    print('This will always execute');
   }
 }
 

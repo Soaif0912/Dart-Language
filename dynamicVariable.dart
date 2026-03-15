@@ -7,5 +7,5 @@ void main() {
   print(a.runtimeType);
 
   a = false;
-  print(a.runtimeType);
+ print(a.runtimeType);
 }

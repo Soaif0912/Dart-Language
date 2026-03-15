@@ -7,4 +7,12 @@ main() {
   final List<int> list = [1, 2, 3];
   list.add(4);
   print(list);
+
+  print('hi ${num + 1} there');
+  
+  test(String name, {age, required city}){
+    print('name: $name, age: $age, city: $city');
+  }
+
+  test('soaif', city: 'New York');
 }
