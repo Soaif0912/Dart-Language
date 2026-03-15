@@ -14,5 +14,5 @@ main() {
     print('name: $name, age: $age, city: $city');
   }
 
-  test('soaif', city: 'New York not good');
+  test('soaif', city: 'New York all the best');
 }
