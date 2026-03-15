@@ -10,7 +10,7 @@ main() {
 
   print('hi ${num + 1} there');
   
-  test(String name, {age, required city}){
+  test(String name, {age = 26, required city}){
     print('name: $name, age: $age, city: $city');
   }
 
